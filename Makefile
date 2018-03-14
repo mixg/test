@@ -6,7 +6,7 @@
 #    By: mxiong <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/05 16:42:18 by mxiong            #+#    #+#              #
-#    Updated: 2018/03/13 17:58:09 by mxiong           ###   ########.fr        #
+#    Updated: 2018/03/13 19:14:12 by mxiong           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,6 +68,10 @@ FILE =  ft_atoi.c  \
 		ft_check_whitespace.c \
 		ft_lstnew.c \
 		ft_lstdelone.c \
+		ft_lstdel.c \
+		ft_lstadd.c \
+		ft_lstiter.c \
+		ft_lstmap.c \
 
 DEL = rm -f
 
