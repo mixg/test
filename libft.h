@@ -6,7 +6,7 @@
 /*   By: mxiong <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/05 16:36:18 by mxiong            #+#    #+#             */
-/*   Updated: 2018/03/13 12:47:04 by mxiong           ###   ########.fr       */
+/*   Updated: 2018/03/16 15:31:16 by mxiong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,5 +82,8 @@ typedef struct		s_list
 t_list				*ft_lstnew(void const *content, size_t content_size);
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+void				ft_lst_add(t_list **alst, t_list *new);
+void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+t_list				ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 #endif
