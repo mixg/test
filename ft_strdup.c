@@ -6,7 +6,7 @@
 /*   By: mxiong <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/23 15:12:07 by mxiong            #+#    #+#             */
-/*   Updated: 2018/03/11 19:09:10 by mxiong           ###   ########.fr       */
+/*   Updated: 2018/03/16 16:30:50 by mxiong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strdup(const char *s1)
 	char	*str;
 
 	len = ft_strlen(s1);
-	if ((str = (char *)malloc(sizeof(char) * len + 1)) == 0)
+	if ((str = ft_memalloc(len + 1)) == 0)
 		return (0);
 	i = 0;
 	while (s1[i])
